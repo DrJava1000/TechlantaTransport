@@ -7,3 +7,5 @@ a IoT (Internet of Things) and Cisco technologies to improve/overhaul Atlanta's 
 This prototype was developed during my time as a Cisco High Extern (2019) and done alongside
 the Techlanta Transport team: Hari Annamraju, Noel Bosco, Kamryn Jones, Keya Parikh.
 
+**Note**: Details related to the proposal can be found in the *doc* folder.
+
