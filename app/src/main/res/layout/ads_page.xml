@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ads_page_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/atlanta_city"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ads_page_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Deals of the Day"
+        android:textColor="#ccd0d3"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        android:translationY="20dp" />
+
+    <LinearLayout
+        android:id="@+id/ad_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:isScrollContainer="false"
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ikea_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="45dp"
+            app:cardBackgroundColor="#321fff"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:id="@+id/ikea_ad_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ikea_ad_img"
+                    android:layout_width="176dp"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/ikea_img" />
+
+                <TextView
+                    android:id="@+id/ikea_deal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ikea_ad_text"
+                    android:textColor="#CCD0D3"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/target_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="90dp"
+            app:cardBackgroundColor="#321fff"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:id="@+id/target_ad_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/target_location_img"
+                    android:layout_width="176dp"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/target_img" />
+
+                <TextView
+                    android:id="@+id/target_deal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/target_ad_text"
+                    android:textColor="#ccd0d3"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/walmart_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="135dp"
+            app:cardBackgroundColor="#321fff"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:id="@+id/walmart_ad_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/walmart_location_img"
+                    android:layout_width="176dp"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/walmart_img" />
+
+                <TextView
+                    android:id="@+id/walmart_deal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/walmart_ad_text"
+                    android:textColor="#ccd0d3"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

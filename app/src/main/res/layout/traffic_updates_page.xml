@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/updates_page_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/atlanta_city"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/updates_page_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Real-Time Traffic Updates"
+        android:textColor="#ccd0d3"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:translationY="20dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/traffic_update_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:translationY="50dp"
+        app:cardBackgroundColor="#321fff"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="100dp">
+
+        <TextView
+            android:id="@+id/update_1_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/update_1"
+            android:textColor="#CCD0D3"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/traffic_update_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="100dp"
+        app:cardBackgroundColor="#321fff"
+        app:cardCornerRadius="40dp">
+
+        <TextView
+            android:id="@+id/update_2_report"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/update_2"
+            android:textColor="#CCD0D3"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/traffic_update_3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:alpha="1"
+        android:translationY="150dp"
+        app:cardBackgroundColor="#321fff"
+        app:cardCornerRadius="40dp">
+        1
+
+        <TextView
+            android:id="@+id/update_3_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/update_3"
+            android:textColor="#CCD0D3"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_screen_layout"
+    android:layout_width="1080px"
+    android:layout_height="2280px"
+    android:background="@drawable/atlanta_city">
+
+    <TextView
+        android:id="@+id/login_page_head"
+        android:layout_width="356dp"
+        android:layout_height="98dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:text="  Techlanta Transport Login"
+        android:textColor="#ccd0d3"
+        android:textSize="27sp"
+        android:textStyle="normal"
+        android:translationY="100dp" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="113dp"
+        android:layout_height="69dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#21219e"
+        android:ellipsize="none"
+        android:onClick="checkNetworkLoginRoutine"
+        android:text="Login"
+        android:textColor="#ccd0d3"
+        android:translationX="150dp"
+        android:translationY="500dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The City of Atlanta is proud to introduce its Wifi 6 High-Speed network. We hope you find a good experience in usage of our service. "
+        android:textAlignment="center"
+        android:textColor="#CCD0D3"
+        android:textSize="18sp"
+        android:translationY="180dp" />
+
+</RelativeLayout>

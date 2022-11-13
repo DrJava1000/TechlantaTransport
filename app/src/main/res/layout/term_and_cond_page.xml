@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/terms_page_layout"
+    android:layout_width="1080px"
+    android:layout_height="2280px"
+    android:background="@drawable/atlanta_city"
+    android:clickable="false">
+
+    <TextView
+        android:id="@+id/term_and_cond_header"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:text="  Techlanta Transport   Terms and Conditions"
+        android:textColor="#ccd0d3"
+        android:textSize="24sp"
+        android:translationY="10dp" />
+
+    <Button
+        android:id="@+id/agree_btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:alpha=".4"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#091EB4"
+        android:enabled="false"
+        android:text="Agree"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#ccd0d3"
+        android:translationX="150dp"
+        android:translationY="500dp" />
+
+    <ScrollView
+        android:id="@+id/term_and_cond_scroll"
+        android:layout_width="340dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:translationY="90dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/privacy_statement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="***Usage of this app requires access to your device's location services. This app cannot be used without permission to location services. You are consenting to your location being shared during usage of Techlanta Transport.***"
+                android:textColor="#CCD0D3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/term_and_cond_paragraph"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/terms_of_service_placeholder_text"
+                android:textColor="#ccd0d3"
+                android:translationY="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
